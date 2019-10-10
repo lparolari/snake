@@ -7,7 +7,7 @@
 import unittest
 from click.testing import CliRunner
 
-from snake import snake
+from snake import snaky
 from snake import cli
 
 

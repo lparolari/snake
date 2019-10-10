@@ -1,23 +1,28 @@
-import keyboard
+from pynput.keyboard import Listener, KeyCode
 
 
 class KeyboardManager(object):
     _callbacks = {}
+    _listener = None
 
     def __init__(self):
-        super().__init__()
-        keyboard.on_press(self._on_press)
+        pass
+        self._listener = Listener(on_press=self._on_press)
+        self._listener.start()
 
     def _on_press(self, key):
-        self._execute(key.name)
+        if isinstance(key, KeyCode):
+            key = key.char
+        self._execute(key)
 
     def _execute(self, key):
+        callback = self._callbacks.get(key)
+        if callback is None:
+            return
         try:
-            callback = self._callbacks.get(key)
-            if callback is None:
-                return
             callback()
         except:
+            # catch-all for keyboard reactions
             pass
 
     def register(self, key, callback):
