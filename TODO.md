@@ -9,3 +9,5 @@ food number.
 
 4. Fix the food generation bug: food is generated also in the snake 
  body (happening only when there is an high concentration of food).
+
+5. Add tests.
