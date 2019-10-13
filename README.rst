@@ -5,11 +5,15 @@ Snake on Terminal
 .. image:: https://img.shields.io/travis/lparolari/snake.svg
 .. image:: https://readthedocs.org/projects/snake/badge/?version=latest
 
-::
 
-    A simple snake game on terminal with focus on well design, reuse and best practise.
+*A simple snake game on terminal with focus on well design, reuse and best practise.*
+
+*Asciimatics* engine, redraws terminal.
 
 .. image:: snake-1.gif
+
+*Basic* engine, uses normal prints.
+
 .. image:: snake-2.gif
 
 
@@ -40,7 +44,7 @@ Install with pip
 
 .. code ::
 
-    pip install snake-terminal-pp
+    pip3 install snake-terminal-pp
 
 Install with git
 
@@ -54,10 +58,10 @@ Install with git
 Author
 ------
 
-- Luca Parolari <<luca.parolari23@gmail.com>>
+- Luca Parolari <luca.parolari23@gmail.com>
 
 
 License
 -------
 
-This software is MIT Licensed. See [LICENSE](LICENSE) file.
+This software is MIT Licensed. See LICENSE_ file.
