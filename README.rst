@@ -1,37 +1,63 @@
-=====
-snake
-=====
-
+Snake on Terminal
+=================
 
 .. image:: https://img.shields.io/pypi/v/snake.svg
-        :target: https://pypi.python.org/pypi/snake
-
 .. image:: https://img.shields.io/travis/lparolari/snake.svg
-        :target: https://travis-ci.org/lparolari/snake
-
 .. image:: https://readthedocs.org/projects/snake/badge/?version=latest
-        :target: https://snake.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
+
+::
+
+    A simple snake game on terminal with focus on well design, reuse and best practise.
+
+.. image:: snake-1.gif
+.. image:: snake-2.gif
 
 
+Usage
+-----
+
+Play with snake
+
+.. code::
+
+    # run the game with defaults
+    snake
+
+    # or with custom options
+    snake --rows-no 40 --cols-no 80 --speed 5 --initial-length 8
+
+For list of options and documentation run
+
+.. code::
+
+    snake --help  # shows the options list and some docs.
 
 
-A simple snake game on terminal.
+Installation
+------------
+
+Install with pip
+
+.. code ::
+
+    pip install snake-terminal-pp
+
+Install with git
+
+.. code ::
+
+    git clone https://github.com/lparolari/snake
+    cd snake
+    python3 setup.py install
 
 
-* Free software: MIT license
-* Documentation: https://snake.readthedocs.io.
+Author
+------
+
+- Luca Parolari <<luca.parolari23@gmail.com>>
 
 
-Features
---------
-
-* TODO
-
-Credits
+License
 -------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+This software is MIT Licensed. See [LICENSE](LICENSE) file.
